@@ -4,4 +4,30 @@ example :-
 cd [path]
 cd C:\Users\Robotics\Desktop\Me\Projects
 
+____________________________
+dir
+this command will show availabel folders and file in current directory
+
+
+_______________________________
+python 
+this command will tell the python version of system or environment
+
+________________________________
+conda
+this command will tell use info about installed anaconda
+
+___________________________________
+conda env list
+This command will enlist the available conda environments
+
+____________________________________
+conda activate [enviornment_name]
+this command is used to activate desired environment
+
+_____________________________________
+
+
+
+
 
