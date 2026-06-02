@@ -1,0 +1,7 @@
+Commands        Remarks
+cd              change directroy
+example :-
+cd [path]
+cd C:\Users\Robotics\Desktop\Me\Projects
+
+
