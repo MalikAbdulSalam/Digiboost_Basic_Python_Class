@@ -1,1 +1,38 @@
+PYTHON ASSIGNMENT 3: SIMPLE FACTORY QUALITY CHECK
 
+PROBLEM STATEMENT:
+A factory produces different products. Each product has a quality score out of 100.
+
+You are given a list of product quality scores. Your task is to check each product and decide whether it is PASS or FAIL.
+
+GIVEN DATA:
+scores = [72, 45, 88, 60, 31, 95, 54, 66, 41, 79]
+
+RULES:
+
+If score is greater than or equal to 60 → PASS
+If score is less than 60 → FAIL
+
+TASK:
+Write a Python program that:
+
+Uses a for loop
+Checks each score in the list
+Prints PASS or FAIL for each product
+Counts total number of PASS and FAIL products
+
+EXPECTED OUTPUT:
+
+72 PASS
+45 FAIL
+88 PASS
+60 PASS
+31 FAIL
+95 PASS
+54 FAIL
+66 PASS
+41 FAIL
+79 PASS
+
+TOTAL PASS: 6
+TOTAL FAIL: 4
