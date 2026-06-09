@@ -1,0 +1,35 @@
+Problem 1: Factory Product Quality Check
+
+A factory produces products and each product has a quality score out of 100.
+
+Task:
+Create a function that checks whether a product is PASS or FAIL.
+
+Conditions:
+
+Score >= 60 → PASS
+Score < 60 → FAIL
+
+Function Name:
+check_quality(score)
+
+Example:
+check_quality(75) → PASS
+
+##################################################################################################
+
+
+Problem 2: Machine Temperature Monitor
+
+A machine stops if temperature is too high.
+
+Task:
+Create a function that checks machine status.
+
+Conditions:
+
+Temperature <= 70 → SAFE
+Temperature > 70 → DANGER
+
+Function Name:
+machine_status(temp)
