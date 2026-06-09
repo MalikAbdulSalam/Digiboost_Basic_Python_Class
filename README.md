@@ -111,19 +111,23 @@ Use the `def` keyword, followed by the function name, parentheses `()`, and a co
 
 ### Syntax
 
-`def function_name(parameters):`
-    `"""Optional docstring: explains what the function does"""`
-    `# Function body`
-    `return value  # Optional`
+```python
+def function_name(parameters):
+    """Optional docstring: explains what the function does"""
+    # Function body
+    return value  # Optional
+```
 
 ### Example
 
-`def greet():`
-    `"""Prints a simple greeting"""`
-    `print("Hello, World!")`
+```python
+def greet():
+    """Prints a simple greeting"""
+    print("Hello, World!")
 
-`# Call the function`
-`greet()  # Output: Hello, World!`
+# Call the function
+greet()  # Output: Hello, World!
+```
 
 ---
 
@@ -132,51 +136,59 @@ Use the `def` keyword, followed by the function name, parentheses `()`, and a co
 ### 3.1 Positional Arguments
 Arguments are passed in the correct order.
 
-`def add(a, b):`
-    `return a + b`
+```python
+def add(a, b):
+    return a + b
 
-`result = add(3, 5)  # a=3, b=5`
-`print(result)       # Output: 8`
+result = add(3, 5)  # a=3, b=5
+print(result)       # Output: 8
+```
 
 ### 3.2 Default Parameters
 Assign default values to parameters.
 
-`def greet_user(name, greeting="Hello"):`
-    `return f"{greeting}, {name}!"`
+```python
+def greet_user(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
 
-`print(greet_user("Alice"))          # Output: Hello, Alice!`
-`print(greet_user("Bob", "Hi"))      # Output: Hi, Bob!`
+print(greet_user("Alice"))          # Output: Hello, Alice!
+print(greet_user("Bob", "Hi"))      # Output: Hi, Bob!
+```
 
 > **Important**: Default parameters must come after non-default parameters.
 
 ### 3.3 Keyword Arguments
 Specify arguments by parameter name.
 
-`def describe_person(name, age, city):`
-    `return f"{name} is {age} years old and lives in {city}."`
+```python
+def describe_person(name, age, city):
+    return f"{name} is {age} years old and lives in {city}."
 
-`print(describe_person(city="Paris", age=30, name="Eve"))`
-`# Output: Eve is 30 years old and lives in Paris.`
+print(describe_person(city="Paris", age=30, name="Eve"))
+# Output: Eve is 30 years old and lives in Paris.
+```
 
 ### 3.4 Variable-Length Arguments
 
 - `*args` – for an arbitrary number of positional arguments (tuple)
 - `**kwargs` – for an arbitrary number of keyword arguments (dictionary)
 
-`def sum_all(*args):`
-    `return sum(args)`
+```python
+def sum_all(*args):
+    return sum(args)
 
-`print(sum_all(1, 2, 3, 4))  # Output: 10`
+print(sum_all(1, 2, 3, 4))  # Output: 10
 
-`def print_info(**kwargs):`
-    `for key, value in kwargs.items():`
-        `print(f"{key}: {value}")`
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
 
-`print_info(name="Alice", age=25, job="Engineer")`
-`# Output:`
-`# name: Alice`
-`# age: 25`
-`# job: Engineer`
+print_info(name="Alice", age=25, job="Engineer")
+# Output:
+# name: Alice
+# age: 25
+# job: Engineer
+```
 
 ---
 
@@ -184,24 +196,28 @@ Specify arguments by parameter name.
 
 A function can send a value back to the caller using `return`. Without `return`, the function returns `None`.
 
-`def square(x):`
-    `return x * x`
+```python
+def square(x):
+    return x * x
 
-`result = square(5)`
-`print(result)  # Output: 25`
+result = square(5)
+print(result)  # Output: 25
 
-`def no_return():`
-    `x = 5`
+def no_return():
+    x = 5
 
-`print(no_return())  # Output: None`
+print(no_return())  # Output: None
+```
 
 ### Returning Multiple Values
 
-`def get_min_max(numbers):`
-    `return min(numbers), max(numbers)`
+```python
+def get_min_max(numbers):
+    return min(numbers), max(numbers)
 
-`minimum, maximum = get_min_max([4, 2, 9, 1, 6])`
-`print(minimum, maximum)  # Output: 1 9`
+minimum, maximum = get_min_max([4, 2, 9, 1, 6])
+print(minimum, maximum)  # Output: 1 9
+```
 
 ---
 
@@ -210,26 +226,30 @@ A function can send a value back to the caller using `return`. Without `return`,
 - **Local scope**: Variables defined inside a function are accessible only within that function
 - **Global scope**: Variables defined outside all functions are accessible everywhere
 
-`x = 10  # Global variable`
+```python
+x = 10  # Global variable
 
-`def my_func():`
-    `y = 5   # Local variable`
-    `print(x)  # Can access global (read-only by default)`
+def my_func():
+    y = 5   # Local variable
+    print(x)  # Can access global (read-only by default)
 
-`my_func()      # Output: 10`
-`# print(y)     # Error: y is not defined outside the function`
+my_func()      # Output: 10
+# print(y)     # Error: y is not defined outside the function
+```
 
 ### Modifying Global Variables
 Use the `global` keyword.
 
-`counter = 0`
+```python
+counter = 0
 
-`def increment():`
-    `global counter`
-    `counter += 1`
+def increment():
+    global counter
+    counter += 1
 
-`increment()`
-`print(counter)  # Output: 1`
+increment()
+print(counter)  # Output: 1
+```
 
 ---
 
@@ -239,20 +259,24 @@ Small, one-line functions defined with the `lambda` keyword. They can have any n
 
 ### Syntax
 
-`lambda arguments: expression`
+```python
+lambda arguments: expression
+```
 
 ### Example
 
-`square = lambda x: x ** 2`
-`print(square(5))  # Output: 25`
+```python
+square = lambda x: x ** 2
+print(square(5))  # Output: 25
 
-`# Common use with sorted, filter, map`
-`numbers = [1, 2, 3, 4, 5]`
-`squared = list(map(lambda x: x ** 2, numbers))`
-`print(squared)  # Output: [1, 4, 9, 16, 25]`
+# Common use with sorted, filter, map
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x ** 2, numbers))
+print(squared)  # Output: [1, 4, 9, 16, 25]
 
-`even = list(filter(lambda x: x % 2 == 0, numbers))`
-`print(even)     # Output: [2, 4]`
+even = list(filter(lambda x: x % 2 == 0, numbers))
+print(even)     # Output: [2, 4]
+```
 
 ---
 
@@ -260,21 +284,23 @@ Small, one-line functions defined with the `lambda` keyword. They can have any n
 
 A string literal immediately after the function definition. Use triple quotes for multi-line docstrings.
 
-`def multiply(a, b):`
-    `"""`
-    `Returns the product of two numbers.`
+```python
+def multiply(a, b):
+    """
+    Returns the product of two numbers.
 
-    `Parameters:`
-    `a (int, float): The first number`
-    `b (int, float): The second number`
+    Parameters:
+    a (int, float): The first number
+    b (int, float): The second number
 
-    `Returns:`
-    `int or float: The product of a and b`
-    `"""`
-    `return a * b`
+    Returns:
+    int or float: The product of a and b
+    """
+    return a * b
 
-`print(multiply.__doc__)   # View docstring`
-`help(multiply)            # Another way`
+print(multiply.__doc__)   # View docstring
+help(multiply)            # Another way
+```
 
 ---
 
@@ -282,14 +308,16 @@ A string literal immediately after the function definition. Use triple quotes fo
 
 A function that calls itself. Must have a base case to stop recursion.
 
-`def factorial(n):`
-    `"""Compute n! recursively"""`
-    `if n == 0:      # Base case`
-        `return 1`
-    `else:           # Recursive case`
-        `return n * factorial(n - 1)`
+```python
+def factorial(n):
+    """Compute n! recursively"""
+    if n == 0:      # Base case
+        return 1
+    else:           # Recursive case
+        return n * factorial(n - 1)
 
-`print(factorial(5))  # Output: 120`
+print(factorial(5))  # Output: 120
+```
 
 ---
 
@@ -334,23 +362,27 @@ A function that calls itself. Must have a base case to stop recursion.
 
 ### Bad Example: Mutable Default Argument
 
-`def add_item(item, lst=[]):`
-    `lst.append(item)`
-    `return lst`
+```python
+def add_item(item, lst=[]):
+    lst.append(item)
+    return lst
 
-`print(add_item(1))  # [1]`
-`print(add_item(2))  # [1, 2] ← Unexpected!`
+print(add_item(1))  # [1]
+print(add_item(2))  # [1, 2] ← Unexpected!
+```
 
 ### Good Example: Use None Instead
 
-`def add_item(item, lst=None):`
-    `if lst is None:`
-        `lst = []`
-    `lst.append(item)`
-    `return lst`
+```python
+def add_item(item, lst=None):
+    if lst is None:
+        lst = []
+    lst.append(item)
+    return lst
 
-`print(add_item(1))  # [1]`
-`print(add_item(2))  # [2]`
+print(add_item(1))  # [1]
+print(add_item(2))  # [2]
+```
 
 ---
 
@@ -365,7 +397,3 @@ A function that calls itself. Must have a base case to stop recursion.
 ---
 
 **End of Python Functions Theory**
-
-## Author
-
-**Engr. Dr. Malik Abdal Salam**
