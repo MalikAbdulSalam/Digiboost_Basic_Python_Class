@@ -1,0 +1,43 @@
+Question 1: AI-Based Quality Inspection System
+
+A factory is developing an AI system to detect defective products on a conveyor belt.
+The AI model is still under training, but the software structure must be completed for integration.
+
+Task:
+
+Create a function named:
+
+def defect_detection():
+
+Use pass inside the function.
+
+#####################################################################################
+
+Questin No:2
+
+A logistics company is building an autonomous robot system. The navigation algorithm is still under development.
+
+Task:
+
+Create a function:
+
+def robot_navigation():
+
+
+#####################################################################################
+Question No 3:
+Problem Statement: Simple Industrial Production Pipeline System
+
+A small manufacturing company is developing a basic software system to manage its production workflow. The system follows a step-by-step pipeline including raw material checking, production, quality inspection, and final reporting. Some modules are already implemented, while others are still under development.
+
+The company wants to structure the program in a way that allows completed functions to return results properly, while unfinished modules should not break the system. For this purpose, placeholder functions will be used for incomplete features using the pass statement.
+
+Task:
+
+Design a simple Python program that simulates the production pipeline. The system should include:
+
+Functions for raw material checking, production, and final report generation using the return statement.
+A placeholder function for quality checking using the pass statement.
+A main pipeline that executes all stages in order and displays the output.
+
+The goal is to ensure smooth execution of the system even when some modules are still under development.
