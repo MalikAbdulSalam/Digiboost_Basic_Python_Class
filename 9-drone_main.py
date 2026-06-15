@@ -15,7 +15,7 @@ class MyWindow(QtWidgets.QMainWindow):
 
         # Load UI
         try:
-            uic.loadUi('drone.ui', self)
+            uic.loadUi('9-drone.ui', self)
         except Exception as e:
             print(f"Error loading UI file: {e}")
             sys.exit(1)
