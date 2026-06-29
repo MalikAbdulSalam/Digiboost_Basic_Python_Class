@@ -1,0 +1,84 @@
+Assignment
+
+Write one Python program that demonstrates all of the above topics by completing the following tasks.
+
+______________________________________________________________________________________________________
+
+Add comments at the beginning of the program containing:
+Student Name
+Roll Number
+Course Name
+Date
+
+
+______________________________________________________________________________________________________
+Print the following heading:
+==============================
+      STUDENT PROFILE
+==============================
+
+
+______________________________________________________________________________________________________
+
+Create variables to store the following information:
+Student Name
+Roll Number
+Age
+Gender
+University
+Department
+Semester
+CGPA
+City
+Country
+Is Enrolled (True/False)
+
+
+
+______________________________________________________________________________________________________
+
+
+
+Display all the information using the print() function in a neat format.
+Create variables of the following data types:
+Integer
+Float
+String
+Boolean
+List
+Tuple
+Dictionary
+
+
+______________________________________________________________________________________________________
+
+
+Print the value and data type of each variable using the type() function.
+
+______________________________________________________________________________________________________
+
+
+Print the following message exactly as shown:
+
+
+
+______________________________________________________________________________________________________
+Use multiple Python statements to perform the following:
+Store two numbers in variables.
+Print their values.
+Print their sum.
+Print their difference.
+Print their product.
+Print their division.
+At the end of the program, print the following summary:
+====================================
+        PROGRAM COMPLETED
+====================================
+
+Topics Used:
+✔ Python Syntax
+✔ Python Statements
+✔ Python Output
+✔ Python Comments
+✔ Python Variables
+✔ Python Data Types
