@@ -8,3 +8,7 @@ conda activate [env_name]
 
 Note:-
 after ths Base>> [env_name]
+
+
+to check environments list type following commands in terminal
+conda env list
